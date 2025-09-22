@@ -1,78 +1,106 @@
-*{
-    margin: 0%;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-header{
-    background-color: lightpink;
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+ 
+.cabecalho{
+    background-color: #3498db;
+    color: white;
     text-align: center;
-    align-content: center;
-    height: 130px;
+    padding: 40px;
+    border-bottom: 2px solid black;
+}
+ 
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 200px;
+    flex-wrap: wrap;
+}
+ 
+.texto {
+    max-width: 500px;
+}
+ 
+.texto h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+ 
+.texto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+ 
+.saibamais {
+    padding: 12px 24px;
+    background-color: #e74c3c;
     color: white;
-}
-
-.A{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.texto{
-    align-content: center;
-}
-.texto .h1{
-    margin-bottom: 10px;
-}
-
-.texto button{
-    background-color: pink;
-    color: white;
-    padding: 10px 20px;
-    font-size: 20px;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-}
-.buton:hover{
-    scale: 1.1;
-    transition: background-color 0.3s;
-}
-
-.footerC {
-  background-color: lightpink;
-  color: black;
-  padding: 50px 20px ; /* espaço extra no final */
-  font-family: Arial, sans-serif;
-  align-content: center;
-  text-align: center;
+    transition: background-color 0.3s ease;
 }
  
-.footerC h2 {
-  font-size: 28px;
-  margin-bottom: 60px;
+.comprar {
+    padding: 12px 24px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
  
-.footerI {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 5px;
-    padding: 0px;
+.saibamais:hover {
+    background-color: #922d21;
 }
  
-.informacoes {
-  background-color: white;
-  padding: 20px;
-  width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.4);
-  text-align: left;
+.comprar:hover {
+    background-color: #922d21;
 }
  
-.informacoes h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-    color: black;
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
 }
  
+.rodape{
+    background-color: #236794;
+    padding-bottom: 41px;
+    border-top: 2px solid black;
+}
+.rodape p{
+    color: white;
+    text-align: center;
+    padding-top: 41px;
+}
+ 
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto h2 {
+        font-size: 1.8rem;
+    }
+    .texto p {
+        font-size: 1rem;
+    }
+    .saibamais {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
