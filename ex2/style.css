@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+header{
+    background-color: lightpink;
+    text-align: center;
+    align-content: center;
+    height: 130px;
+    color: white;
+}
+
+.A{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.texto{
+    align-content: center;
+}
+.texto .h1{
+    margin-bottom: 10px;
+}
+
+.texto button{
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.buton:hover{
+    scale: 1.1;
+    transition: background-color 0.3s;
+}
+
+.footerC {
+  background-color: lightpink;
+  color: black;
+  padding: 50px 20px ; /* espaço extra no final */
+  font-family: Arial, sans-serif;
+  align-content: center;
+  text-align: center;
+}
+ 
+.footerC h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+ 
+.footerI {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    padding: 0px;
+}
+ 
+.informacoes {
+  background-color: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  text-align: left;
+}
+ 
+.informacoes h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+    color: black;
+}
+ 

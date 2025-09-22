@@ -1,0 +1,54 @@
+*{
+margin: 0%;
+padding: 0%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px black;
+}
+
+.card img {
+  width: 80%;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: black;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: grey;
+  margin: 10px 0;
+}
+
+.card-content .profissao {
+  font-weight: 700;
+  color: lightseagreen;
+}
